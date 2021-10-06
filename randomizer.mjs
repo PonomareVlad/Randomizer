@@ -12,8 +12,10 @@ customElements.define('randomizer-form', class Randomizer extends HTMLElement {
         this.form = Object.assign(document.createElement('form'))
         this.number = Object.assign(document.createElement('input'), {
             placeholder: 'Максимальное число',
+            min: 1,
             minLength: 1,
-            required: 'true'
+            required: 'true',
+            type: 'number'
         })
         this.submit = Object.assign(document.createElement('button'), {innerText: 'Генерировать', type: 'submit'})
         this.outputWrapper = Object.assign(document.createElement('div'), {id: 'results'});
