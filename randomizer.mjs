@@ -41,7 +41,7 @@ customElements.define('randomizer-form', class Randomizer extends HTMLElement {
     updateWidth(e) {
         if (!this.value) return this.style.width = 'auto';
         this.style.width = 0;
-        this.style.width = (this.scrollWidth + 20) + 'px';
+        this.style.width = (this.scrollWidth + 30) + 'px';
     }
 
     getRandomIntInclusive(min, max) {
